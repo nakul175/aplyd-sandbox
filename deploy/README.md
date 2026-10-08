@@ -19,3 +19,7 @@ Caddy requests the certificates by itself once both names resolve.
 
 ## Roll back
 `git revert` on `main` publishes the previous site within 3 minutes. The previous Caddy file, if replaced, is kept as `/root/aplyd-sandbox.caddy.bak`.
+
+## aplyd.si
+
+`aplyd.si` and `www.aplyd.si` redirect permanently to the same path on `https://aplyd.org` (`deploy/aplyd-si-redirect.caddy`, installed as `/etc/caddy/conf.d/aplyd-si-redirect.caddy`). DNS for aplyd.si is at Namecheap (BasicDNS): A `@` and A `www` to 64.227.190.72, TTL 5 minutes. The file is a record of what is on the droplet; the update timer does not install it.
