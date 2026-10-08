@@ -1,0 +1,9 @@
+# /etc/caddy/conf.d/aplyd-si-redirect.caddy on the saha-apps droplet (64.227.190.72).
+# aplyd.si is an alias of aplyd.org: every request is redirected permanently to the same path on https://aplyd.org.
+# Caddy issues the certificates for aplyd.si and www.aplyd.si once both A records point at the droplet.
+# DNS: Namecheap BasicDNS, A @ and A www -> 64.227.190.72 (set 8 October 2026).
+# This file is a record; it is not applied by aplyd-sandbox-update. Install by copying it into /etc/caddy/conf.d/,
+# then `caddy validate --config /etc/caddy/Caddyfile && systemctl reload caddy`.
+aplyd.si, www.aplyd.si {
+    redir https://aplyd.org{uri} permanent
+}
