@@ -1,0 +1,8 @@
+[Unit]
+Description=Pull main and publish the Aplyd Sandbox landing page
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/aplyd-sandbox-update
+TimeoutStartSec=300

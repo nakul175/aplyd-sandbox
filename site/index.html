@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aplyd Sandbox | Live prototypes from APLYD</title>
+  <meta name="description" content="Aplyd Sandbox is where the APLYD team shares working prototypes of applied AI for health, agriculture, education and learning. Access is by invitation.">
+  <meta name="theme-color" content="#232B65">
+  <link rel="canonical" href="https://aplyd.org/">
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="APLYD">
+  <meta property="og:title" content="Aplyd Sandbox | Live prototypes from APLYD">
+  <meta property="og:description" content="Working prototypes of applied AI from the APLYD team, open for partners to test. Access is by invitation.">
+  <meta property="og:url" content="https://aplyd.org/">
+  <meta property="og:image" content="https://aplyd.org/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Aplyd Sandbox: live prototypes from APLYD">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Aplyd Sandbox | Live prototypes from APLYD">
+  <meta name="twitter:description" content="Working prototypes of applied AI from the APLYD team, open for partners to test.">
+  <meta name="twitter:image" content="https://aplyd.org/assets/img/og-image.png">
+
+  <!-- Icons -->
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <!-- Lato: the APLYD brand typeface -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/apps.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="https://aplyd.com" aria-label="APLYD website (aplyd.com)">
+        <img src="assets/img/aplyd-wordmark-navy.svg" alt="APLYD by Athena Infonomics" width="108" height="44">
+      </a>
+      <span class="brand-divider" aria-hidden="true"></span>
+      <span class="sandbox-label">Sandbox</span>
+      <a class="btn btn-outline btn-sm header-link" href="https://aplyd.com">
+        <span><span class="hide-xs">Visit </span>aplyd.com</span>
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-mark" src="assets/img/aplyd-logomark-white.svg" alt="" width="196" height="216" aria-hidden="true">
+      <div class="container hero-inner">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Intelligence, applied</p>
+        <h1 id="hero-title">Aplyd Sandbox</h1>
+        <p class="lede">Live prototypes from the APLYD team. Applied AI you can open, test and question before it goes into service.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#apps">
+            Explore the prototypes
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="https://aplyd.com">About APLYD</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="apps" id="apps" aria-labelledby="apps-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="kicker">Prototypes</p>
+            <h2 id="apps-title">Open a demo</h2>
+          </div>
+          <p class="section-note">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            Access is by invitation. Sign in with the details shared by the APLYD team.
+          </p>
+        </div>
+
+        <!-- Cards are rendered from the APPS list in assets/js/apps.js. Edit that file to add an app. -->
+        <ul class="app-grid" id="app-grid" role="list"></ul>
+
+        <noscript>
+          <ul class="app-grid app-grid--fallback" role="list">
+            <li><a href="https://health.aplyd.org">Saha Health</a></li>
+            <li><a href="https://agriculture.aplyd.org">Saha Agriculture</a></li>
+            <li><a href="https://education.aplyd.org">Saha Education</a></li>
+            <li><a href="https://academy.aplyd.org">Aplyd Academy</a></li>
+          </ul>
+        </noscript>
+
+        <aside class="notice" aria-label="About the sandbox">
+          <span class="notice-dot" aria-hidden="true"></span>
+          <p><strong>Work in progress.</strong> These are prototypes shared for testing and feedback. Features, content and availability can change without notice.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-brand" href="https://aplyd.com" aria-label="APLYD website (aplyd.com)">
+        <img src="assets/img/aplyd-wordmark-white.svg" alt="APLYD by Athena Infonomics" width="98" height="40" loading="lazy">
+      </a>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="https://aplyd.com">aplyd.com</a>
+        <a href="https://aplyd.com">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 APLYD, the AI and digital transformation venture of Athena Infonomics.</p>
+    </div>
+  </footer>
+</body>
+</html>

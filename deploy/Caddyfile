@@ -1,0 +1,19 @@
+# Caddy site for the Aplyd Sandbox landing page. provision.sh installs this as /etc/caddy/conf.d/aplyd-sandbox.caddy.
+# Public by design: no basic auth. Certificates are issued by Caddy once DNS for both names points at this droplet.
+aplyd.org {
+	root * /var/www/aplyd-sandbox
+	encode zstd gzip
+	header {
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		X-Frame-Options DENY
+		-Server
+	}
+	@assets path /assets/* /favicon.* /apple-touch-icon.png
+	header @assets Cache-Control "public, max-age=3600"
+	file_server
+}
+
+www.aplyd.org {
+	redir https://aplyd.org{uri} permanent
+}
